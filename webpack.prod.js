@@ -32,6 +32,9 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contentHash].css'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/template.html'
     })
   ],
   module: {
